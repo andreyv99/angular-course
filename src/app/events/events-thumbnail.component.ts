@@ -16,6 +16,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
     </div>
   `,
   styles: [`
+    .thumbnail { min-height: 210px; }
     .pad-left { padding-left: 10px; }
     .well div { color: #bbb}
   `]
@@ -23,10 +24,4 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 export class EventThumbnailComponent {
   @Input() event: any;
-  someProperty: any = 'some value';
-
-
-  logFoo() {
-    console.log('foo')
-  }
 }
