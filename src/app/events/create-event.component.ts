@@ -8,10 +8,11 @@ import { Router } from '@angular/router';
     .error input {background-color: #E3C3C5}
     .error ::-webkit-input-placeholder { color: #999; }
   `]
-  
+
 })
 
 export class CreateEventComponent {
+  newEvent;
   isDirty: boolean = true;
   constructor(private router: Router) {
 
